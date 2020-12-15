@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Create a Session</h1>
+
+<form action="/sessions" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name">
+
+    <label for="category">Select a catergory:</label>
+    <input type="text" id="category" name="category">
+
+      <input class="btn btn--action" type='submit' value="Create">
+</div>
+</form>
+
+{% endblock %}

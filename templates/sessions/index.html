@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Sessions</h2>
+
+<p class="btn--wrapper">
+  <a class="btn btn--action" href="/sessions/new">New session</a>
+</p>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th></th>
+    <th>Category</th>
+  </tr>
+  {% for session in sessions %}
+  <tr>
+    <td><a href="/sessions/{{ session.id }}"> {{session.name}} </a></td>
+    <td>|</td>
+    <td>{{ session.category }}</td>
+  </tr>
+
+
+
+</section>
+  {% endfor %}
+</table>
+{% endblock %}
+
+
+
+

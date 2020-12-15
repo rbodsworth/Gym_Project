@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Members</h1>
+<p class="btn--wrapper">
+  <a class="btn btn--action" href="/members/new">New Member</a>
+
+</p>
+</p>
+
+<table>
+  <tr>
+    <th>Name</th>
+  
+  </tr>
+  {% for member in members %}
+  <tr>
+    <td><a href="/members/{{ member.id }}"> {{member.name}} </a></td>
+
+
+    
+{% endfor %}
+{% endblock %}
+

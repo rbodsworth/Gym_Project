@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1> {{member.name}} </h1>
+
+<section>
+    <p>{{ member.name }}</p>
+    <a href="/members/{{ member.id }}/edit"></a>
+    <form action="/members/{{ member.id }}/delete" method="POST">
+        <input class="btn btn--danger" type="submit" value="delete" />
+    </form>
+</section>
+
+{{ all_members }}
+
+<h3>Classes booked:</h3>
+
+<ul>
+    {% for session in sessions  %}
+    <li>{{session.name}}</li>
+    {% endfor %}
+</ul>
+
+
+
+{% endblock %}
