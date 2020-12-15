@@ -7,16 +7,34 @@
   <a class="btn btn--action" href="/sessions/new">New session</a>
 </p>
 
-<table>
+<div class="row">
+  <div class="column">
+    <img src="static/images/spar.jpg" alt="spar" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="static/images/jump.jpg" alt="Forest" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="static/images/weight.jpg" alt="Mountains" style="width:100%">
+  </div>
+</div>
+<p>
+
+</p>
+<h4>Upcoming Sessions</h4>
+<p>
+
+</p>
+<table class=>
   <tr>
-    <th>Name</th>
+    <th>NAME</th>
     <th></th>
-    <th>Category</th>
+    <th>CATEGORY</th>
   </tr>
   {% for session in sessions %}
   <tr>
     <td><a href="/sessions/{{ session.id }}"> {{session.name}} </a></td>
-    <td>|</td>
+    <td></td>
     <td>{{ session.category }}</td>
   </tr>
 

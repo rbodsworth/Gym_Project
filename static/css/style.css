@@ -1,6 +1,24 @@
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+
+.member {
+  display:flex;
+  flex-direction: row;
+  padding: 5px;
+  text-align: right;
+  font-size: 30px;
+  margin: 20px
+}
+
 body {
   background: url(/static/images/so-white.png); 
-  background-size: cover;)
+  background-size: cover;
 }
 .header {
   padding: 5px;
@@ -94,3 +112,16 @@ body {
     border-left: 1px solid #254E70;
     padding-left: 25px;
   }  
+
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  
+  /* Clear floats after image containers */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
