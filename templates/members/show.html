@@ -1,26 +1,35 @@
+
+
 {% extends 'base.html' %}
 
 {% block content %}
-<h1> {{member.name}} </h1>
 
+</style>
+</head>
+<body>
+
+<div class="content">
+<h2> {{member.name}} </h2>
 <section>
-    <p>{{ member.name }}</p>
     <a href="/members/{{ member.id }}/edit"></a>
     <form action="/members/{{ member.id }}/delete" method="POST">
-        <input class="btn btn--danger" type="submit" value="delete" />
+        <input class="btn btn--danger" type="submit" value="delete member" />
     </form>
 </section>
-
 {{ all_members }}
-
+<p>
+    
+</p>
 <h3>Classes booked:</h3>
+<p>
 
+</p>
 <ul>
     {% for session in sessions  %}
     <li>{{session.name}}</li>
     {% endfor %}
 </ul>
-
+<div>
 
 
 {% endblock %}

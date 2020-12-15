@@ -1,29 +1,34 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<h1> {{session.name}} </h1>
+<h2> {{session.name}} </h2>
 
 <p>Category: {{ session.category }}</p>
 
-<section>
-    <p>{{ session.name }}</p>
-    <a href="/sessions/{{ session.id }}/edit"></a>
-    <form action="/sessions/{{ session.id }}/delete" method="POST">
-        <input class="btn btn--danger" type="submit" value="delete" />
-    </form>
-</section>
+<img src="/static/images/man.jpg" alt="GYM" width="500" height="300" class="center">
 
 <h3>Enrolled:</h3>
-
+<p>
+    
+</p>
 <ul>
     {% for member in members  %}
     <li>{{member.name}}</li>
+<p>
 
+</p>
     
 
     {% endfor %}
 </ul>
+<p>
 
-
+</p>
+<section>
+    <a href="/sessions/{{ session.id }}/edit"></a>
+    <form action="/sessions/{{ session.id }}/delete" method="POST">
+        <input class="btn btn--danger" type="submit" value="delete session" />
+    </form>
+</section>
 
 {% endblock %}
