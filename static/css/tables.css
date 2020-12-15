@@ -1,16 +1,29 @@
+
+
 td, th {
-    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    border: 2px solid black;
+    order-bottom: 1px solid rgb(17, 1, 1);
+    border-bottom: 2px solid rgb(20, 20, 20);
   }
+
   
   td {
-    padding: 10px 20px 0px 0px;
+    padding: 20px 25px 11px 0px;
   }
   
   th {
-    padding: 0px 20px 10px 0px;
-    border-bottom: 1px solid papayawhip;
+    background-color: rgb(192, 21, 9);
+    padding: 25px 20px 20px 0px;
+    border-bottom: 1px solid rgb(10, 6, 0);
   }
   
   table {
     border-collapse: collapse;
-  }
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;}
+
+  body {text-align:center;}
+  
