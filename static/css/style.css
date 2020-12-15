@@ -17,14 +17,14 @@
 }
 
 body {
-  background: url(/static/images/so-white.png); 
+  background-color: #fDF0D5;
   background-size: cover;
 }
 .header {
   padding: 5px;
   text-align: center;
-  background: #000000;
-  color: rgb(12, 12, 12);
+  background: #f5f2f2;
+  color: rgb(248, 241, 241);
   font-size: 30px;
   margin: 10px
 }
@@ -33,7 +33,7 @@ body {
     
     background-size: cover;
     background-repeat: no-repeat;
-    color: #0a2cec;
+    color: #01295F;
     font-family: 'CS Rocky', sans-serif;
     padding: 0px;
     margin: 0px;
@@ -47,7 +47,7 @@ body {
   
   h1 {
     font-size: 3em;
-    color: #9c061c;
+    color: #FD151B;
     margin-bottom: 20px;
     text-align: center;
     padding: 10px;
@@ -55,7 +55,7 @@ body {
 
   h2 {
     font-size: 3em;
-    color: #9c061c;
+    color: #FD151B;
     margin-bottom: 20px;
     text-align: center;
     padding: 10px;
@@ -63,7 +63,7 @@ body {
 
   p {
     font-size: .5;
-    color: #0104c0;
+    color: #01295F;
     margin-bottom: 20px;
     text-align: center;
     padding: -50px;
@@ -71,12 +71,12 @@ body {
   }
   
   a, a:link, a:visited {
-    color: #c6001a;
+    color: #FD151B;
     text-decoration: none;
   }
   
   a:hover, a:active, a:focus {
-    color: #180bd6;
+    color: #01295F;
   }
   
   nav {
@@ -119,7 +119,7 @@ body {
     padding: 5px;
   }
   
-  /* Clear floats after image containers */
+
   .row::after {
     content: "";
     clear: both;

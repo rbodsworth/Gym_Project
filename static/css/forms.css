@@ -11,7 +11,7 @@ input[type="submit"] {
    -webkit-appearance: none;
    background: 96% / 15% no-repeat papayawhip;
    font-family: 'Merriweather', serif;
-   border: 1px solid #eee;
+   border: 1px solid rgb(12, 12, 12);
    display: block;
   } 
 
@@ -21,9 +21,9 @@ input[type="submit"] {
       margin: 15px 0;
       font-size: 0.8em;
       -webkit-appearance: none;
-      background: 96% / 15% no-repeat papayawhip;
+      background: 96% / 15% no-repeat rgb(22, 22, 22);
       font-family: 'Merriweather', serif;
-      border: 1px solid #eee;
+      border: 1px solid rgb(8, 8, 8);
       display: block;
   }
   

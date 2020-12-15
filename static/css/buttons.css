@@ -1,29 +1,25 @@
-table.center {
-  margin-left:auto; 
-  margin-right:auto;
-}
 
 .btn {
     border:0px none;
     padding: 4px 8px;
-    color: #FFFFFF;
+    color: #ffffff;
     cursor:pointer;
   }
   
   .btn--danger {
-    background-color: #C33C54;
+    background-color: #FD151B;
   }
   
   .btn--danger:hover {
-    background-color: #730000;
+    background-color: #0a0a0a;
   }
   
   .btn--action:hover {
-    background-color: #ABC798;
+    background-color: #01295F;
   }
   
   .btn--action {
-    background-color: #0b1802;
+    background-color: #01295F;
   }
   
   .btn--wrapper {
