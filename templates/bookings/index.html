@@ -33,11 +33,11 @@
     <tr>
       {% for booking in bookings %}
     </tr>
-    <td> {{booking.member.name}}</a></td>
-    <td>{{booking.session.name }}</td>
+    <td> <a href="/members/{{ booking.member.id }}">{{booking.member.name}}</a></td>
+    <td><a href="/sessions/{{ booking.session.id }}">{{booking.session.name }}</td>
     <td><a href="/bookings/{{ booking.id }}/edit"></a>
       <form action="/bookings/{{ booking.id }}/delete" method="POST">
-          <input class="btn btn--danger" type="submit" value="delete" />
+          <input class="btn btn--danger" type="submit" value="x" />
       </form></td>
   </tr>
       

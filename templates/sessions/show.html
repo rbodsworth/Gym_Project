@@ -5,23 +5,30 @@
 
 <p>Category: {{ session.category }}</p>
 
-<img src="/static/images/man.jpg" alt="GYM" width="500" height="300" class="center">
+<img src="/static/images/ring.jpg" alt="GYM" width="500" height="260" class="center">
+<p>
 
-<h3>Enrolled:</h3>
+</p>
+
 <p>
     
 </p>
 <ul>
+<table>
+    <tr>
+    <th>Currently Enrolled</th>
+    <tr>
     {% for member in members  %}
-    <li>{{member.name}}</li>
-<p>
-
-</p>
-    
+    </tr>
+    <td>{{member.name}}<a></td>
+<tr>
 
     {% endfor %}
 </ul>
+<div>
 <p>
+
+
 
 </p>
 <section>
