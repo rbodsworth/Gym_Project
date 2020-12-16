@@ -3,7 +3,7 @@
 {% block content %}
 <h1>Members</h1>
 <p class="btn--wrapper">
-  <a class="btn btn--action" href="/members/new">Add New Member</a>
+  <a class="btn btn--action"  href="/members/new">Add New Member</a>
 
   <div class="row">
     <div class="column">
@@ -33,7 +33,7 @@
     <section>
       <a href="/members/{{ member.id }}/edit"></a>
       <form action="/members/{{ member.id }}/delete" method="POST">
-          <input class="btn btn--danger" type="submit" value="delete" />
+          <input class="btn btn--danger" type="submit" style="font-family: Verdana, Geneva, Tahoma, sans-serif;" value="delete" />
       </form>
   </section>
 

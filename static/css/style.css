@@ -1,3 +1,8 @@
+.currbook {
+  color: #FD151B;
+  font-size: 120%;
+}
+
 .content {
   max-width: 500px;
   margin: auto;

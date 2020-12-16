@@ -4,7 +4,7 @@
 <h1>Bookings</h1>
 
 <p class="btn--wrapper">
-  <a class="btn btn--action" href="/bookings/new">New booking</a>
+  <a class="btn btn--action" href="/bookings/new">Add New Booking</a>
 </p>
 
 <div class="row">
@@ -19,8 +19,12 @@
   </div>
 </div>
 <p>
-
+  <h4 class=currbook>Current Bookings</h4>
+  <p>
+    
+  </p>
 <ul>
+  
   {% for booking in bookings %}
   <li>
   <p>{{ booking.member.name }} - {{ booking.session.name }} </p>
@@ -33,5 +37,18 @@
   {% endfor %}
 </ul>
 
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Session</th>
+    <tr>
+      {% for booking in bookings %}
+    </tr>
+    <td> {{booking.member.name}}</a></td>
+    <td>{{booking.session.name }}</td>
+  </tr>
+  
 
+{% endfor %}
+</table>
 {% endblock %}

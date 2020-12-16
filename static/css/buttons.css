@@ -4,6 +4,7 @@
     padding: 4px 8px;
     color: #ffffff;
     cursor:pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
   
   .btn--danger {
