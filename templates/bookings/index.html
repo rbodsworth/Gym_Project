@@ -23,32 +23,25 @@
   <p>
     
   </p>
-<ul>
-  
-  {% for booking in bookings %}
-  <li>
-  <p>{{ booking.member.name }} - {{ booking.session.name }} </p>
-    <p>
-      <form action="/bookings/{{ booking.id }}/delete" method="POST">
-        <input class="btn btn--danger" type="submit" value="delete" />
-      </form>
-    </p>
-  </li>
-  {% endfor %}
-</ul>
+
 
 <table>
   <tr>
     <th>Name</th>
     <th>Session</th>
+    <th>Delete Booking</th>
     <tr>
       {% for booking in bookings %}
     </tr>
     <td> {{booking.member.name}}</a></td>
     <td>{{booking.session.name }}</td>
+    <td><a href="/bookings/{{ booking.id }}/edit"></a>
+      <form action="/bookings/{{ booking.id }}/delete" method="POST">
+          <input class="btn btn--danger" type="submit" value="delete" />
+      </form></td>
   </tr>
-  
+      
 
 {% endfor %}
-</table>
+
 {% endblock %}
